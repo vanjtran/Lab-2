@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dj3un07ff0pyf"]
+
+[ext_resource type="Texture2D" uid="uid://bayrlrjm621kv" path="res://Free/Main Characters/Mask Dude/Fall (32x32).png" id="1_nwe6f"]
+[ext_resource type="Script" path="res://man.gd" id="2_fvq2t"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fall(32x32)" type="Sprite2D" parent="."]
+position = Vector2(201.5, 170)
+scale = Vector2(3.15625, 3.1875)
+texture = ExtResource("1_nwe6f")
+script = ExtResource("2_fvq2t")

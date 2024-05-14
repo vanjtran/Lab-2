@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://3g6gte3x8ig3"]
+
+[ext_resource type="Script" path="res://Character.gd" id="1_lfjv4"]
+[ext_resource type="Texture2D" uid="uid://bayrlrjm621kv" path="res://Free/Main Characters/Mask Dude/Fall (32x32).png" id="2_7mj57"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jrkwj"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_lfjv4")
+
+[node name="Fall(32x32)" type="Sprite2D" parent="."]
+texture = ExtResource("2_7mj57")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_jrkwj")
